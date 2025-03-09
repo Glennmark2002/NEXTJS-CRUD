@@ -4,7 +4,7 @@ import { SquarePen } from 'lucide-react';
 
 const getTopics = async () => { 
   try {
-    const res = await fetch('http://localhost:3000/api/topics', { cache: 'no-store' });
+    const res = await fetch('https://nextjs-crud-gold-eight.vercel.app/api/topics', { cache: 'no-store' });
 
     if(!res.ok) {
       throw new Error('Failed to fetch Topics');
